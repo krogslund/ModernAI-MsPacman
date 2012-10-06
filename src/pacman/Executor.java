@@ -13,7 +13,7 @@ import pacman.controllers.Controller;
 import pacman.controllers.HumanController;
 import pacman.controllers.KeyBoardInput;
 import pacman.controllers.examples.AggressiveGhosts;
-import pacman.controllers.examples.CwiePacMan;
+
 import pacman.controllers.examples.Legacy;
 import pacman.controllers.examples.Legacy2TheReckoning;
 import pacman.controllers.examples.NearestPillPacMan;
@@ -25,6 +25,7 @@ import pacman.controllers.examples.StarterGhosts;
 import pacman.controllers.examples.StarterPacMan;
 import pacman.game.Game;
 import pacman.game.GameView;
+import pacman.cwie.*;
 
 import static pacman.game.Constants.*;
 
@@ -63,7 +64,7 @@ public class Executor
 		//run the game in asynchronous mode.
 		boolean visual=true;
 //		exec.runGameTimed(new NearestPillPacMan(),new AggressiveGhosts(),visual);
-		exec.runGameTimed(new CwiePacMan(),new StarterGhosts(),visual);
+		exec.runGameTimed(new TheGhostBusters(),new StarterGhosts(),visual);
 //		exec.runGameTimed(new HumanController(new KeyBoardInput()),new StarterGhosts(),visual);	
 		//*/
 		
